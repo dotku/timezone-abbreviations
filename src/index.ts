@@ -1,9 +1,10 @@
 import timezones from "./data.json";
 
-interface TimeZone {
+export interface TimeZone {
   abbr: string;
   description: string;
   offset: string;
+  names?: string;
 }
 
 export default timezones as TimeZone[];

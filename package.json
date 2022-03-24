@@ -1,6 +1,6 @@
 {
   "name": "timezone-abbreviations",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
@@ -12,8 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "@tsconfig/node14": "^1.0.1",
+    "@types/node": "^17.0.23",
     "ts-node": "^10.7.0",
     "typescript": "^4.6.2"
-  },
-  "dependencies": {}
+  }
 }
