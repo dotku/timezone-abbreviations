@@ -1,10 +1,10 @@
 import timezones from "./index";
 import timezoneData from "./data.json";
 
-console.assert(
-  timezones[0].abbr === timezoneData[1].abbr,
-  "'\x1b[31m%s\x1b[0m'",
-  "timezone data is not matching"
-);
-console.log("timezones type", typeof timezones[0]);
-console.log("timezones", ...timezones.filter((item) => item.abbr === "AEST"));
+test("check random item should match", () => {
+  const randomNumber = Math.floor(timezones.length * Math.random() * 10);
+  console.log("timezones", ...timezones.filter((item) => item.abbr === "AEST"));
+  expect(timezones[randomNumber].abbr).toBe(timezoneData[1].abbr);
+  console.log("timezones type", typeof timezones[0]);
+  console.log("timezones", ...timezones.filter((item) => item.abbr === "AEST"));
+});
