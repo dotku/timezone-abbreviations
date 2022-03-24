@@ -15,8 +15,14 @@ import timezones from "timezone-abbreviations";
 
 console.log(
   "timezone",
-  timezones.filter((item) => item.abbr === "AEST")
+  ...timezones.filter((item) => item.abbr === "AEST") 
 );
+
+// output: {
+//   abbr: 'AEST',
+//   description: 'Australian Eastern Standard Time',
+//   offset: 'UTC+10'
+// }
 ```
 
 ## Todo
