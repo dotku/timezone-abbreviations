@@ -4,8 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
-    "test": "node --experimental-modules --loader ts-node/esm src/test.ts"
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
