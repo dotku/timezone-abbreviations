@@ -1,3 +1,5 @@
-import program from "./index";
+import timezones from "./index";
 
-console.log("program", program);
+console.log("timezones", timezones);
+
+console.log("timezones", ...timezones.filter((item) => item.abbr === "AEST"));
