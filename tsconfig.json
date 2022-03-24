@@ -1,0 +1,10 @@
+{
+    "extends": "@tsconfig/node16/tsconfig.json",
+    "module": "commonjs",
+    "compilerOptions": {
+      "outDir": "dist",
+      "resolveJsonModule": true,
+      "declaration": true,
+      "esModuleInterop": true
+    }
+  }
