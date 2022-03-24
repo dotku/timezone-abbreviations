@@ -7,6 +7,10 @@ npm install timezone-abbreviations
 ```
 
 ```js
-import timezones from "timezone-abbreviations"
-timezones.map(item => item.abbr)
+import timezones from "timezone-abbreviations";
+
+console.log(
+  "timezone",
+  timezones.filter((item) => item.abbr === "AEST")
+);
 ```
