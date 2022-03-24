@@ -1,8 +1,9 @@
 # Timezone Abbreviations
 
 JavaScript doesn't provide abbreviations list, and moment.js might be overkill
-for my project, so I create a package and get the data from
-<https://en.wikipedia.org/wiki/List_of_time_zone_abbreviations>.
+for my project, so I create a package and get the timezone abbreviations data
+from <https://en.wikipedia.org/wiki/List_of_time_zone_abbreviations> and extract
+zone string from moment.js and verified by `Intl.DateTimeFormat`.
 
 ## Usage
 
@@ -24,7 +25,3 @@ console.log(
 //   offset: 'UTC+10'
 // }
 ```
-
-## Todo
-
-- Add timezone, eg `Asia/Shanghai`.
