@@ -19,9 +19,15 @@ console.log(
   ...timezones.filter((item) => item.abbr === "AEST") 
 );
 
-// output: {
+// output:
+// {
 //   abbr: 'AEST',
 //   description: 'Australian Eastern Standard Time',
-//   offset: 'UTC+10'
+//   offset: 'UTC+10',
+//   names: [
+//     'Australia/Brisbane',
+//     'Australia/Lindeman',
+//     'Australia/Queensland'
+//   ]
 // }
 ```
