@@ -16,6 +16,7 @@
     "offset": "UTC+09:30",
     "names": ["Australia/Darwin", "Australia/North"]
   },
+  { "abbr": "ACT", "description": "Acre Time", "offset": "UTC−05" },
   {
     "abbr": "ACT",
     "description": "ASEAN Common Time (proposed)",
@@ -94,10 +95,16 @@
     "description": "Amazon Summer Time (Brazil)[2]",
     "offset": "UTC−03"
   },
+  {
+    "abbr": "AMT",
+    "description": "Amazon Time (Brazil)[3]",
+    "offset": "UTC−04"
+  },
   { "abbr": "AMT", "description": "Armenia Time", "offset": "UTC+04" },
   { "abbr": "ANAT", "description": "Anadyr Time[4]", "offset": "UTC+12" },
   { "abbr": "AQTT", "description": "Aqtobe Time[5]", "offset": "UTC+05" },
   { "abbr": "ART", "description": "Argentina Time", "offset": "UTC−03" },
+  { "abbr": "AST", "description": "Arabia Standard Time", "offset": "UTC+03" },
   {
     "abbr": "AST",
     "description": "Atlantic Standard Time",
@@ -150,6 +157,16 @@
   { "abbr": "BRT", "description": "Brasília Time", "offset": "UTC−03" },
   {
     "abbr": "BST",
+    "description": "Bangladesh Standard Time",
+    "offset": "UTC+06"
+  },
+  {
+    "abbr": "BST",
+    "description": "Bougainville Standard Time[6]",
+    "offset": "UTC+11"
+  },
+  {
+    "abbr": "BST",
     "description": "British Summer Time (British Standard Time from Feb 1968 to Oct 1971)",
     "offset": "UTC+01"
   },
@@ -175,11 +192,10 @@
   { "abbr": "CCT", "description": "Cocos Islands Time", "offset": "UTC+06:30" },
   {
     "abbr": "CDT",
-    "description": "Cuba Daylight Time[7]",
-    "offset": "UTC−04",
+    "description": "Central Daylight Time (North America)",
+    "offset": "UTC−05",
     "names": [
       "America/Chicago",
-      "America/Havana",
       "America/Indiana/Knox",
       "America/Indiana/Tell_City",
       "America/Knox_IN",
@@ -194,10 +210,15 @@
       "America/Winnipeg",
       "CST6CDT",
       "Canada/Central",
-      "Cuba",
       "US/Central",
       "US/Indiana-Starke"
     ]
+  },
+  {
+    "abbr": "CDT",
+    "description": "Cuba Daylight Time[7]",
+    "offset": "UTC−04",
+    "names": ["America/Havana", "Cuba"]
   },
   {
     "abbr": "CEST",
@@ -272,7 +293,8 @@
   {
     "abbr": "CHST",
     "description": "Chamorro Standard Time",
-    "offset": "UTC+10"
+    "offset": "UTC+10",
+    "names": ["Pacific/Guam", "Pacific/Saipan"]
   },
   { "abbr": "CHUT", "description": "Chuuk Time", "offset": "UTC+10" },
   {
@@ -287,8 +309,8 @@
   { "abbr": "COT", "description": "Colombia Time", "offset": "UTC−05" },
   {
     "abbr": "CST",
-    "description": "Cuba Standard Time",
-    "offset": "UTC−05",
+    "description": "Central Standard Time (North America)",
+    "offset": "UTC−06",
     "names": [
       "America/Bahia_Banderas",
       "America/Belize",
@@ -302,6 +324,15 @@
       "America/Regina",
       "America/Swift_Current",
       "America/Tegucigalpa",
+      "Canada/Saskatchewan",
+      "Mexico/General"
+    ]
+  },
+  {
+    "abbr": "CST",
+    "description": "China Standard Time",
+    "offset": "UTC+08",
+    "names": [
       "Asia/Chongqing",
       "Asia/Chungking",
       "Asia/Harbin",
@@ -309,12 +340,11 @@
       "Asia/Macau",
       "Asia/Shanghai",
       "Asia/Taipei",
-      "Canada/Saskatchewan",
-      "Mexico/General",
       "PRC",
       "ROC"
     ]
   },
+  { "abbr": "CST", "description": "Cuba Standard Time", "offset": "UTC−05" },
   { "abbr": "CT", "description": "Central Time", "offset": "UTC−06/UTC−05" },
   { "abbr": "CVT", "description": "Cape Verde Time", "offset": "UTC−01" },
   {
@@ -362,6 +392,11 @@
       "Indian/Mayotte"
     ]
   },
+  {
+    "abbr": "ECT",
+    "description": "Eastern Caribbean Time (does not recognise DST)",
+    "offset": "UTC−04"
+  },
   { "abbr": "ECT", "description": "Ecuador Time", "offset": "UTC−05" },
   {
     "abbr": "EDT",
@@ -401,7 +436,7 @@
     "abbr": "EEST",
     "description": "Eastern European Summer Time",
     "offset": "UTC+03",
-    "names": ["Asia/Amman"]
+    "names": ["Asia/Amman", "Asia/Damascus"]
   },
   {
     "abbr": "EET",
@@ -411,7 +446,6 @@
       "Africa/Cairo",
       "Africa/Tripoli",
       "Asia/Beirut",
-      "Asia/Damascus",
       "Asia/Famagusta",
       "Asia/Gaza",
       "Asia/Hebron",
@@ -533,6 +567,11 @@
       "Iceland"
     ]
   },
+  {
+    "abbr": "GST",
+    "description": "South Georgia and the South Sandwich Islands Time",
+    "offset": "UTC−02"
+  },
   { "abbr": "GST", "description": "Gulf Standard Time", "offset": "UTC+04" },
   { "abbr": "GYT", "description": "Guyana Time", "offset": "UTC−04" },
   {
@@ -575,7 +614,12 @@
     "description": "International Day Line West time zone",
     "offset": "UTC−12"
   },
-  { "abbr": "IDT", "description": "Israel Daylight Time", "offset": "UTC+03" },
+  {
+    "abbr": "IDT",
+    "description": "Israel Daylight Time",
+    "offset": "UTC+03",
+    "names": ["Asia/Jerusalem", "Asia/Tel_Aviv", "Israel"]
+  },
   { "abbr": "IOT", "description": "Indian Ocean Time", "offset": "UTC+03" },
   {
     "abbr": "IRDT",
@@ -590,16 +634,16 @@
   },
   {
     "abbr": "IST",
-    "description": "Israel Standard Time",
-    "offset": "UTC+02",
-    "names": [
-      "Asia/Calcutta",
-      "Asia/Jerusalem",
-      "Asia/Kolkata",
-      "Asia/Tel_Aviv",
-      "Israel"
-    ]
+    "description": "Indian Standard Time",
+    "offset": "UTC+05:30",
+    "names": ["Asia/Calcutta", "Asia/Kolkata"]
   },
+  {
+    "abbr": "IST",
+    "description": "Irish Standard Time[8]",
+    "offset": "UTC+01"
+  },
+  { "abbr": "IST", "description": "Israel Standard Time", "offset": "UTC+02" },
   {
     "abbr": "JST",
     "description": "Japan Standard Time",
@@ -615,6 +659,11 @@
     "description": "Korea Standard Time",
     "offset": "UTC+09",
     "names": ["Asia/Pyongyang", "Asia/Seoul", "ROK"]
+  },
+  {
+    "abbr": "LHST",
+    "description": "Lord Howe Standard Time",
+    "offset": "UTC+10:30"
   },
   {
     "abbr": "LHST",
@@ -680,6 +729,11 @@
     "description": "Moscow Time",
     "offset": "UTC+03",
     "names": ["Europe/Moscow", "Europe/Simferopol", "W-SU"]
+  },
+  {
+    "abbr": "MST",
+    "description": "Malaysia Standard Time",
+    "offset": "UTC+08"
   },
   {
     "abbr": "MST",
@@ -763,7 +817,8 @@
   {
     "abbr": "PHST",
     "description": "Philippine Standard Time",
-    "offset": "UTC+08"
+    "offset": "UTC+08",
+    "names": ["Asia/Manila"]
   },
   {
     "abbr": "PKT",
@@ -789,8 +844,7 @@
   {
     "abbr": "PST",
     "description": "Pacific Standard Time (North America)",
-    "offset": "UTC−08",
-    "names": ["Asia/Manila"]
+    "offset": "UTC−08"
   },
   { "abbr": "PWT", "description": "Palau Time[10]", "offset": "UTC+09" },
   {
@@ -826,14 +880,19 @@
   { "abbr": "SRT", "description": "Suriname Time", "offset": "UTC−03" },
   {
     "abbr": "SST",
-    "description": "Singapore Standard Time",
-    "offset": "UTC+08",
+    "description": "Samoa Standard Time",
+    "offset": "UTC−11",
     "names": [
       "Pacific/Midway",
       "Pacific/Pago_Pago",
       "Pacific/Samoa",
       "US/Samoa"
     ]
+  },
+  {
+    "abbr": "SST",
+    "description": "Singapore Standard Time",
+    "offset": "UTC+08"
   },
   { "abbr": "SYOT", "description": "Showa Station Time", "offset": "UTC+03" },
   { "abbr": "TAHT", "description": "Tahiti Time", "offset": "UTC−10" },
